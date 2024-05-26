@@ -59,7 +59,7 @@ a:hover {
 }
 
 .logo {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
 .logo:hover {
@@ -179,9 +179,9 @@ section {
     margin: auto 0;
 }
 
-/* .section__pic-container img {
+.section__pic-container img {
     border-radius: 50%;
-} */
+}
 
 .section__text {
     align-self: center;
@@ -274,6 +274,10 @@ section {
 
 #about {
     position: relative;
+}
+
+.about-me img {
+    border-radius: 10%;
 }
 
 .about-containers {
@@ -514,6 +518,10 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+    .logo {
+        font-size: 1rem;
+    }
+
     #contact,
     footer {
         height: 40vh;
@@ -550,10 +558,6 @@ footer p {
 
     .experience-sub-title {
         font-size: 1.25rem;
-    }
-
-    .logo {
-        font-size: 1.5rem;
     }
 
     .nav-links {
