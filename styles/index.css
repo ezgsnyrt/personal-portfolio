@@ -281,9 +281,11 @@ section {
 }
 
 .about-containers {
+    display: flex;
     gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+
 }
 
 .about-details-container {
@@ -291,7 +293,6 @@ section {
     flex-direction: column;
 }
 
-.about-containers,
 .about-details-container {
     display: flex;
 }
@@ -377,6 +378,7 @@ article .icon {
 
 #projects {
     position: relative;
+    height: 115vh;
 }
 
 .color-container {
