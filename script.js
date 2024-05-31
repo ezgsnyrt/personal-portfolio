@@ -9,46 +9,47 @@ function toggleMenu() {
 /* Pop-ups */
 
 document.addEventListener("DOMContentLoaded", function () {
-    const modalCreators = document.querySelectorAll(".modal-open");
-    const modalCloseAction = document.querySelectorAll(".modal-close");
-    const overlay = document.querySelector(".modal-overlay");
+  const modalTriggers = document.querySelectorAll(".modal-open");
+  const modalCloseTrigger = document.querySelectorAll(".modal-close");
+  const overlay = document.querySelector(".modal-overlay");
 
-    modalCreators.forEach((create) => {
-      create.addEventListener("click", () => {
-        const { popupCreate } = create.dataset;
-        const popupModal = document.querySelector(
-          `[data-popup-modal="${popupCreate}"]`
-        );
+  modalTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const { popupTrigger } = trigger.dataset;
+      const popupModal = document.querySelector(
+        `[data-popup-modal="${popupTrigger}"]`
+      );
 
-        function closeModal() {
-          popupModal.classList.remove("show");
-          overlay.classList.remove("overlay-on");
-        }
+      function closeModal() {
+        popupModal.classList.remove("show");
+        overlay.classList.remove("overlay-on");
+      }
 
-        // to open the modals:
-        popupModal.classList.add("show");
-        overlay.classList.add("overlay-on");
+      // Open the modals:
+      popupModal.classList.add("show");
+      overlay.classList.add("overlay-on");
 
-        // close modal when clicking outside (on the overlay):
-        overlay.addEventListener("click", () => {
+      // Close modal when clicking outside (on the overlay):
+      overlay.addEventListener("click", () => {
+        closeModal();
+      });
+
+      // Close modal when the "Escape" key is pressed:
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && popupModal.classList.contains("show")) {
           closeModal();
-        });
+        }
+      });
 
-        // close modal when user presses the "Escape" key:
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape" && popupModal.classList.contains("show")) {
-            closeModal();
-          }
-        });
-
-        // close modals when clicking on X:
-        modalCloseAction.forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            const modalWindow = this.parentNode.parentNode;
-            modalWindow.classList.remove("show");
-            overlay.classList.remove("overlay-on");
-          });
+      // Close modals when clicking on X:
+      modalCloseTrigger.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          const modalWindow = this.parentNode.parentNode;
+          modalWindow.classList.remove("show");
+          overlay.classList.remove("overlay-on");
         });
       });
     });
   });
+});
+
