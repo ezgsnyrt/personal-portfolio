@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- Temporary Image Sources: https://unsplash.com/photos/person-using-macbook-pro-npxXWgQ33ZQ, https://unsplash.com/photos/macbook-pro-near-green-potted-plant-on-table-zNRITe8NPqY, https://unsplash.com/photos/macbook-pro-showing-vegetable-dish-JVSgcV8_vb4-->
@@ -202,11 +203,26 @@
                     <div class="article-container">
                         <img src="./images/project1.png" alt="project image" class="project-img"/>
                     </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <h2 class="experience-sub-title project-title">Rock-Paper-Scissors Game</h2>
                     <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn modal-open" data-popup-create="modal1">Details</button>
                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
                     </div>
+
+                    <div class="modal" data-popup-modal="modal1">
+                        <div class="modal-content">
+                            <button class="modal-close"><i class="fa-regular fa-rectangle-xmark"></i></button>
+                            <h2 class="modal-title">Project Details</h2>
+                            <p>This project focused on creating a rock, paper, scissors game. This project basically has two components.
+                                The first component involves all the variable definitions, functions and HTML contents, whereas the second one
+                                allows the player learn the game rules.
+                            </p>
+                            <p class="modal-skill"><strong>Built on:</strong> HTML, CSS, JavaScript, React, Responsive design</p>
+                        </div>
+                    </div>
+                    <div class="modal-overlay"></div>
+
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
