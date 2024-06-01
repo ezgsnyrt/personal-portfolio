@@ -824,6 +824,13 @@ footer {
         font-size: 0.8rem;
     }
 
+    .input-box ::placeholder,
+    .input-box label,
+    .below-container ::placeholder,
+    .below-container label {
+        font-size: 12px;
+    }
+
     .experience-sub-title {
         font-size: 1.25rem;
     }
