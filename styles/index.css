@@ -803,7 +803,7 @@ footer {
         margin: 0;
     }
 
-    .contact-info-bottom-container{
+    .contact-info-bottom-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -812,9 +812,16 @@ footer {
         width: 100%;
     }
 
-    .contact-info-container p,
     .nav-links li a {
         font-size: 1rem;
+    }
+
+    .contact-info-bottom-container .contact-info-container {
+        margin: 0.4rem;
+    }
+
+    .contact-info-container p {
+        font-size: 0.8rem;
     }
 
     .experience-sub-title {
