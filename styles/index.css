@@ -525,9 +525,6 @@ form {
     width: 60%;
     margin: 50px auto;
     padding: 1rem 1rem;
-    /* overflow: hidden; */
-    /* width: 600px; */
-    /* max-width: 95%; */
 }
 
 .upper-container {
@@ -600,6 +597,11 @@ form .action input{
     margin-right: 10px;
 }
 
+form .action input:hover {
+    color: rgb(53, 53, 53);
+    background: white;
+}
+
 .contact-info-container {
     display: flex;
     align-items: center;
@@ -631,8 +633,15 @@ footer {
     margin-top: 5rem;
 }
 
-footer p {
+.copyright-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright-container .copyright-text {
     text-align: center;
+    font-size: 16px;
 }
 
 
@@ -834,5 +843,10 @@ footer p {
 
     .text-container {
         text-align: justify;
+    }
+
+    .copyright-container .copyright-text {
+        text-align: center;
+        font-size: 9px;
     }
 }
