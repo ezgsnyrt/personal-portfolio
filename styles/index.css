@@ -576,6 +576,10 @@ form {
     font-size: 18px;
 }
 
+.below-container label {
+    letter-spacing: 0.15rem;
+}
+
 form .action{
     margin-bottom: 3rem;
 }
