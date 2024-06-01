@@ -378,7 +378,7 @@ article .icon {
 
 #projects {
     position: relative;
-    height: 115vh;
+    height: 125vh;
 }
 
 .color-container {
@@ -414,7 +414,7 @@ article .icon {
     left: 0;
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(2px);
-  }
+}
 
 .modal {
     opacity: 0;
@@ -486,14 +486,6 @@ article .icon {
 }
 
 
-
-
-
-
-
-
-
-
 /* Contact Section */
 
 #contact {
@@ -505,13 +497,106 @@ article .icon {
 
 .contact-info-upper-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
     border-radius: 2rem;
-    border: rgb(53, 53, 53 ) 0.1rem solid;
+    /* border: rgb(53, 53, 53 ) 0.1rem solid; */
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    /* background: rgb(250, 250, 250); */
     margin: 2rem auto;
     padding: 0.5rem;
+}
+
+.contact-info-bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+form {
+    height: 100%;
+    width: 60%;
+    margin: 50px auto;
+    padding: 1rem 1rem;
+    /* overflow: hidden; */
+    /* width: 600px; */
+    /* max-width: 95%; */
+}
+
+.upper-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper-container .input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 47%;
+}
+
+.input-box label{
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+}
+
+.upper-container .input-box input {
+    border-radius: 0.3rem;
+    border: 1px solid black;
+    outline: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    font-size: 18px;
+}
+
+.below-container {
+    margin-bottom: 2.5rem;
+}
+
+.below-container textarea {
+    background: transparent;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+    outline: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 11rem;
+    font-size: 18px;
+}
+
+form .action{
+    margin-bottom: 3rem;
+}
+
+form .action input{
+    background: transparent;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+    color: white;
+    background: black;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    height: 3rem;
+    letter-spacing: 0.15rem;
+    outline: 0;
+    padding: 0 1.2rem;
+    margin-right: 10px;
 }
 
 .contact-info-container {
@@ -535,17 +620,19 @@ article .icon {
     height: 2.5rem;
 }
 
+
+
+
 /* Footer Section */
 
 footer {
     height: 26vh;
-    margin: 0 1rem;
+    margin-top: 5rem;
 }
 
 footer p {
     text-align: center;
 }
-
 
 
 
@@ -608,16 +695,78 @@ footer p {
     .about-containers {
         margin-top: 0;
     }
+
+    form {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    form .upper-container .input-box{
+        width: 48%;
+    }
+
+    form .action{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contact .section__text__p1 {
+        margin-top: 2rem;
+    }
+
+    #contact .title {
+        margin-bottom: 2rem;
+    }
+
+    #footer {
+        height: 70vh;
+    }
 }
+
+
+
+
 
 @media screen and (max-width: 600px) {
     .logo {
         font-size: 1rem;
     }
 
+    form {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    form .upper-container {
+        flex-direction: column;
+    }
+
+    form .upper-container .input-box{
+        width: 100%;
+    }
+
+    form .action{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form .action input{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #contact .section__text__p1 {
+        margin-top: 2rem;
+    }
+
+    #contact .title {
+        margin-bottom: 0;
+    }
+
     #contact,
     footer {
-        height: 40vh;
+        height: 60vh;
+        margin-top: 2rem;
     }
 
     #profile {
@@ -640,8 +789,17 @@ footer p {
         flex-wrap: wrap;
     }
 
-    .contact-info-container {
+    .contact-info-upper-container {
         margin: 0;
+    }
+
+    .contact-info-bottom-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 0;
+        width: 100%;
     }
 
     .contact-info-container p,
