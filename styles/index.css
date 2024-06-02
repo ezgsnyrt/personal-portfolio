@@ -12,6 +12,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+
 }
 
 p {
@@ -456,7 +457,7 @@ article .icon {
 .modal-content {
     padding: 0 1rem;
     color: #181818;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .modal-title {
@@ -663,6 +664,11 @@ footer {
     #projects {
         height: fit-content;
     }
+
+    .modal-content {
+        padding-left: 0.5rem;
+        padding-right: 1.6rem;
+    }
 }
 
 
@@ -770,6 +776,11 @@ footer {
 
     #footer {
         height: 70vh;
+    }
+
+    .modal-content {
+        padding-left: 0.5rem;
+        padding-right: 1.6rem;
     }
 }
 
@@ -915,5 +926,25 @@ footer {
     .copyright-container .copyright-text {
         text-align: center;
         font-size: 9px;
+    }
+
+    .modal {
+        width: 100%;
+        min-width: 210px;
+        max-width: 280px;
+        height: 400px;
+    }
+
+    .modal-content {
+        padding-left: 0.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .modal-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content p {
+        font-size: 1rem;
     }
 }
