@@ -456,6 +456,7 @@ article .icon {
 .modal-content {
     padding: 0 1rem;
     color: #181818;
+    overflow: scroll;
 }
 
 .modal-title {
