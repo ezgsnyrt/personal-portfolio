@@ -665,6 +665,7 @@ footer {
     }
 }
 
+
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
@@ -672,6 +673,15 @@ footer {
 
     #hamburger-nav {
         display: flex;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hamburger-menu .menu-links li a {
+        font-size: 1rem;
+        padding: 0.5rem;
     }
 
     #experience,
@@ -682,6 +692,15 @@ footer {
     #profile,
     .section-container {
         display: block;
+    }
+
+    #profile .section__text h1,
+    section .title {
+        font-size: 2.5rem;
+    }
+
+    #profile .section__text__p2 {
+        font-size: 1.7rem;
     }
 
     .arrow {
@@ -703,8 +722,28 @@ footer {
         margin: 0 auto 2rem;
     }
 
+    #about .about-containers .details-container p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    #about .about-containers .details-container h3 {
+        padding-bottom: 0.7rem;
+    }
+
+    #about .text-container p {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        text-align: justify;
+        padding-top: 1rem;
+    }
+
     .about-containers {
         margin-top: 0;
+    }
+
+    #experience .article-container p {
+        font-size: 0.9;
     }
 
     form {
@@ -735,12 +774,13 @@ footer {
 }
 
 
-
-
-
 @media screen and (max-width: 600px) {
     .logo {
         font-size: 1rem;
+    }
+
+    .hamburger-menu .menu-links li a {
+        font-size: 0.7rem;
     }
 
     form {
@@ -783,6 +823,18 @@ footer {
     #profile {
         height: 83vh;
         margin-bottom: 0;
+    }
+
+    #profile .section__text .title {
+        font-size: 1.8rem;
+    }
+
+    #profile .section__text .section__text__p2 {
+        font-size: 1.2rem;
+    }
+
+    #profile  .btn {
+        padding: 0.8rem;
     }
 
     article {
