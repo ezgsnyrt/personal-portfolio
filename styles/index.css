@@ -286,7 +286,6 @@ section {
     gap: 2rem;
     margin-bottom: 0.6rem;
     margin-top: 0.6rem;
-
 }
 
 .about-details-container {
@@ -296,6 +295,12 @@ section {
 
 .about-details-container {
     display: flex;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.5rem;
 }
 
 .about-pic {
@@ -324,7 +329,7 @@ section {
 }
 
 .section__pic-container {
-    height: 400px;
+    height: 500px;
     width: 400px;
     margin: auto 0;
 }
