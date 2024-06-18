@@ -344,7 +344,7 @@ section {
 .experience-sub-title {
     font-weight: 600;
     color: rgb(85, 85, 85);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
@@ -393,8 +393,7 @@ article .icon {
 }
 
 .project-img {
-    width: 90%;
-    height: 90%;
+    width: 75%;
     border-radius: 2rem;
 }
 
@@ -665,6 +664,19 @@ footer {
         flex-wrap: wrap;
     }
 
+    #about .section-container {
+        gap: 2rem;
+    }
+
+    .about-me img {
+        width: 360px;
+    }
+
+    .text-container p {
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+
     #contact,
     #projects {
         height: fit-content;
@@ -745,7 +757,6 @@ footer {
     #about .text-container p {
         font-size: 0.9rem;
         line-height: 1.3rem;
-        text-align: justify;
         padding-top: 1rem;
     }
 
@@ -799,6 +810,40 @@ footer {
         font-size: 0.7rem;
     }
 
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    #profile .section__text .title {
+        font-size: 1.8rem;
+    }
+
+    #profile .section__text .section__text__p2 {
+        font-size: 1.2rem;
+    }
+
+    #profile  .btn {
+        padding: 0.8rem;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    #contact .section__text__p1 {
+        margin-top: 2rem;
+    }
+
+    #contact .title {
+        margin-bottom: 0;
+    }
+
+    #contact,
+    footer {
+        margin-top: 2rem;
+    }
+
     form {
         width: 100%;
         margin-top: 0;
@@ -821,40 +866,6 @@ footer {
     form .action input{
         margin-bottom: 10px;
         width: 100%;
-    }
-
-    #contact .section__text__p1 {
-        margin-top: 2rem;
-    }
-
-    #contact .title {
-        margin-bottom: 0;
-    }
-
-    #contact,
-    footer {
-        margin-top: 2rem;
-    }
-
-    #profile {
-        height: 83vh;
-        margin-bottom: 0;
-    }
-
-    #profile .section__text .title {
-        font-size: 1.8rem;
-    }
-
-    #profile .section__text .section__text__p2 {
-        font-size: 1.2rem;
-    }
-
-    #profile  .btn {
-        padding: 0.8rem;
-    }
-
-    article {
-        font-size: 1rem;
     }
 
     footer nav {
@@ -914,6 +925,10 @@ footer {
         width: auto;
         height: 46vw;
         justify-content: center;
+    }
+
+    .section__pic-container img {
+        object-fit: contain;
     }
 
     .section__text__p2 {
